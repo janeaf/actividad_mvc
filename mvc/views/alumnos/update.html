@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">Update Data</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <main role="main" class="container my-auto">
+    <form method="POST" action="" class="main-form needs-validation" novalidate>
+      <br></br>
+        <div class="form-group">
+            <label for="Matricula">Matricula</label>
+            <input type="text" name="Matricula" id="Matricula" class="form-control" required placeholder="1718110394">
+        </div>
+        <div class="form-group">
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre" id="Nombre" class="form-control" required placeholder="Andrea Sarai">
+        </div>
+        <div class="form-group">
+            <label for="Apellido1">Apellido Paterno</label>
+            <input type="text" name="Apellido1" id="Apellido1" class="form-control" required placeholder="Juárez">
+        </div>
+        <div class="form-group">
+            <label for="Apellido2">Apellido Materno</label>
+            <input type="text" name="Apellido2" id="Apellido2" class="form-control" required placeholder="Munguia">
+        </div>
+
+        <div class="form-group">
+            <label for="Edad">Edad</label>
+            <input type="number" name="Edad" id="Edad" class="form-control" required placeholder="20">
+        </div>
+        <div class="form-group">
+            <label for="Fecha">Fecha de nacimiento</label>
+            <input type="date" name="Fecha" id="Fecha" class="form-control" required>
+        </div>
+
+        <div class="radio">
+            <label for="Sexo">Sexo</label>
+        </div>
+        <div class="radio">
+            <label>
+              <input type="radio" name="opciones1" id="opcion1"  >
+                Femenino
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+              <input type="radio" name="opciones2" id="opcion2" >
+                Maculino
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="Estado">Estado civil</label>
+            <input type="text" name="Estado" id="Estado" class="form-control" required placeholder="Soltera">
+        </div>
+
+    <br></br>
+
+    <div style="width: 500px;">
+        <button type="submit" class="btn btn-primary" style="background:#00FF00">Actualizarr</button>
+
+        <a href="/"><button type="button" class="btn" style="background:#C0C0C0">Regresar</button></a>
+    </div>
+      <br></br>
+    </form>
+
+    <!--VALIDACIÓN DE CAMPOS-->
+    <script>
+        var form = document.querySelector('.needs-validation');
+
+        form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        })
+    </script>
+
+</body>
+
+</html>
