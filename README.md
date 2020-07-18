@@ -1,5 +1,3 @@
-# mvc_v1
+# actividad_mvc
 
-[![Run on Repl.it](https://repl.it/badge/github/AndreaJuarez/mvc_v1)](https://repl.it/github/AndreaJuarez/mvc_v1)
-
-Repositorio que contendrá las versiones correspondientes a esta actividad. Aplicaciones Web 5to cuatrimestre
+Repositorio que contendrá las versiones correspondientes a esta actividad. Aplicaciones Web I4.0 5to cuatrimestre, este repositorio unicamente contiene los archivos que corresponden al funcionamiento del MVC.
