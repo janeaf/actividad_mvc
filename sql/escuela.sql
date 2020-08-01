@@ -15,7 +15,7 @@ apellido_materno        VARCHAR(20)         NOT NULL,
 edad					CHAR(2)				NOT NULL,
 fecha_nacimiento		DATE,
 sexo					CHAR(10)			NOT NULL,
-estado_civil			CHAR(10)			NOT NULL,
+estado_civil			CHAR(10)			NOT NULL
 ) ENGINE= InnoDB DEFAULT CHARSET=latin1;
 
 /*INSERCION DE DOS ALUMNOS*/
