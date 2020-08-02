@@ -24,3 +24,6 @@ INSERT INTO alumnos(id_alumno, matricula, nombre, apellido_paterno, apellido_mat
 
 INSERT INTO alumnos(id_alumno, matricula, nombre, apellido_paterno, apellido_materno, edad, fecha_nacimiento, sexo, estado_civil) VALUES 
 (NULL, '1718110384', 'Julissa', 'Dominguez', 'Badillo', '20', '2000/04/05', 'Femenino', 'Soltera');
+
+SELECT * FROM alumnos;
+DELETE FROM alumnos WHERE id_alumno = "8";
