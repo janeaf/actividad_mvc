@@ -86,9 +86,41 @@ class Alumnos():
             print(e)
             return False
 
+    " METODO DE ACTUALIZAR "
+    def update(self, matricula,nombre,apellido_paterno,apellido_materno,edad,fecha_nacimiento,sexo,estado_civil):
+        try:
+            self.connect()
+            query = ("UPDATE alumnos SET nombre=%s, apellido_paterno=%s, apellido_materno=%s, edad=%s, fecha_nacimiento=%s, sexo=%s, estado_civil=%s WHERE matricula=%s;")
+            values = (nombre,apellido_paterno,apellido_materno,edad,fecha_nacimiento,sexo,estado_civil, matricula)
+            self.cursor.execute(query, values)
+            self.cnx.commit()
+            self.cursor.close()
+            self.cnx.close()
+            return True
+        except Exception as e:
+            print(e)
+            return False
+
+    " METODO DE ELIMINAR "
+    def delete(self, matricula):
+        try:
+            self.connect()
+            query = ("DELETE  FROM alumnos WHERE matricula = %s;")
+            values = (matricula,)
+            self.cursor.execute(query, values)
+            self.cnx.commit()
+            self.cursor.close()
+            self.cnx.close()
+            return True
+        except Exception as e:
+            print(e)
+            return False
+
+
 object = Alumnos()
 object.connect()
 #object.insert("1718110379","Marlen","Carmona","Lopez",19,"2000/10/05","Femenino","Soltera")
+#object.update('1718110394', 'Andrea', 'Juarez', 'Munguia', '20', '2000/06/14', 'Femenino', 'Soltera')
 
 for row in object.select():
     print(row)

@@ -26,6 +26,8 @@ $def with(result)
               <th scope="col">Fecha de Nacimiento</th>
               <th scope="col">Sexo</th>
               <th scope="col">Estado</th>
+              <th scope="col">Update</th>
+              <th scope="col">Delete</th>
             </tr>
           </thead>
           <tbody>
@@ -39,11 +41,14 @@ $def with(result)
                 <td>$row['fecha_nacimiento']</td>
                 <td>$row['sexo']</td>
                 <td>$row['estado_civil']</td>
+                <td><a href="/update/$row['matricula']"><button type="button" class="btn" style="background: #00FF00">Update</button></a></td>
+                <td><a href="/delete/$row['matricula']"><button type="button" class="btn" style="background: #FF0000">Delete</button></a></td>
               </tr>
             </tbody>
         </table>
 
     <div style="width: 500px;">
+        <!--
         <a href="insert"><button type="button" class="btn" style="background:#00CC00">Insert</button></a>
 
         <a href="view"><button type="button" class="btn" style="background:#FF0000">View</button></a>
@@ -51,6 +56,7 @@ $def with(result)
         <a href="update"><button type="button" class="btn" style="background:#FFFF00">Update</button></a>
 
         <a href="delete"><button type="button" class="btn" style="background:#00CCCC">Delete</button></a>
+        -->
 
         <a href="/"><button type="button" class="btn" style="background:#C0C0C0">Regresar</button></a>
     </div>
