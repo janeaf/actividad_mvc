@@ -1,5 +1,3 @@
-# mvc_v1
+# actividad_mv
 
-[![Run on Repl.it](https://repl.it/badge/github/AndreaJuarez/mvc_v1)](https://repl.it/github/AndreaJuarez/mvc_v1)
-
-Repositorio que contendrá las versiones correspondientes a esta actividad. Aplicaciones Web 5to cuatrimestre
+Repositorio que contiene todas las modificaciones correspondientes a la realización de la aplicación MVC, que utiliza MySQL para almacenar aquellos datos ingresados.
